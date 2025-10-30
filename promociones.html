@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promociones - Sliddy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="promociones.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main class="promos">
+  <h1>Promociones Sliddy</h1>
+  <p>Seleccioná las cantidades y descubrí cuánto podés ahorrar.</p>
+
+
+  <section class="info-promos">
+    <h2>Promociones vigentes</h2>
+    <ul>
+      <li>🧥 <strong>2x1 en todas las prendas:</strong> llevás dos productos iguales y pagás solo uno.</li>
+      <li>👕 <strong>10% de descuento</strong> en compras superiores a <strong>$150.000</strong>.</li>
+      <li>🩳 <strong>Bonus remeras:</strong> si comprás tres o más remeras, la más barata tiene <strong>50% off</strong>.</li>
+    </ul>
+    <p>Las promociones se aplican automáticamente al calcular tu total.</p>
+  </section>
+
+  <div class="productos-form">
+    <div class="producto">
+      <label>Remera Cinque Terre ($28.000)</label>
+      <input type="number" id="remeraC" value="0" min="0">
+    </div>
+    <div class="producto">
+      <label>Remera Monaco ($28.000)</label>
+      <input type="number" id="remeraMonaco" value="0" min="0">
+    </div>
+    <div class="producto">
+      <label>Remera Western Oversize ($25.000)</label>
+      <input type="number" id="remeraN" value="0" min="0">
+    </div>
+    <div class="producto">
+      <label>Hoodie "Club" Marrón ($45.000)</label>
+      <input type="number" id="buzo" value="0" min="0">
+    </div>
+    <div class="producto">
+      <label>Hoodie "Club" Negro ($45.000)</label>
+      <input type="number" id="buzoN" value="0" min="0">
+    </div>
+  </div>
+
+  <button id="calcular" class="btn-primario">Calcular total</button>
+  <div id="resultado" class="resultado"></div>
+</main>

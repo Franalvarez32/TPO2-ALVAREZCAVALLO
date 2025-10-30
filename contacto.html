@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto · Sliddy</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section class="contacto">
+    <h1>Contacto</h1>
+
+    <div class="grid-contacto">
+    
+      <article class="panel">
+        <h2>Sliddy — Local comercial</h2>
+        <ul class="lista">
+          <li><strong>Dirección:</strong> Gral Enrique Martinez 1476 · Local 21</li>
+          <li><strong>Horario:</strong> Lun a vie 10 a 20 h. Sab 10 a 14 h</li>
+          <li><strong>Teléfono:</strong> <a href="tel:+541124586676">+54 11 2458-6676</a></li>
+          <li><strong>Email:</strong> <a href="mailto:sliddystore@gmail.com">sliddystore@gmail.com</a></li>
+          <li><strong>Instagram:</strong> <a href="https://instagram.com/sliddy.ar" target="_blank" rel="noopener">@sliddy.ar</a></li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <h2>¿Cómo llegar?</h2>
+        <img src="img/mapa.jpg" alt="Ubicación de Sliddy" style="width:100%; border-radius:8px;">
+      </article>
+
+
+      
+      <article class="panel">
+        <h2>Escribinos</h2>
+        <form class="form" action="mailto:contacto@sliddy.ar" method="post" enctype="text/plain">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="Nombre" type="text" required>
+          </div>
+          <div class="campo">
+            <label for="correo">Email</label>
+            <input id="correo" name="Email" type="email" required>
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="Mensaje" rows="4" required></textarea>
+          </div>
+          <button class="btn btn-primario" type="submit">Enviar</button>
+        </form>
+        <p class="ayuda">También podés escribirnos a <a href="mailto:sliddystore@gmail.com">sliddystore@gmail.com</a>.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
